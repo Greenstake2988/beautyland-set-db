@@ -1,4 +1,12 @@
 <div id="<%= dom_id producto %>">
+
+  <p>
+    <strong>Foto:</strong>
+    <div>
+    <%= image_tag producto.photo, width: 400 if producto.photo.attached?%>
+    </div>
+  </p>
+
   <p>
     <strong>Nombre:</strong>
     <%= producto.nombre %>
